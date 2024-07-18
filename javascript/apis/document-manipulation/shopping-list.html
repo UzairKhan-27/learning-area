@@ -31,6 +31,32 @@
     </ul>
 
     <script>
+      
+      const listUnorder=document.querySelector("ul");
+      const inputRef=document.querySelector("input");
+      const buttonRef=document.querySelector("button");
+
+      buttonRef.addEventListener("click",()=>{
+        const myCurrItem=inputRef.value;
+        console.log(myCurrItem);
+        inputRef.value="";
+
+        const listItem=document.createElement("li");
+        const listSpan=document.createElement("span");
+        const listButton=document.createElement("button");
+
+        listItem.appendChild(listSpan);
+        listItem.appendChild(listButton);
+        listSpan.textContent=myCurrItem;
+        listButton.textContent="Delete";
+        listUnorder.appendChild(listItem);
+
+      listButton.addEventListener("click",()=>{
+        listUnorder.removeChild(listItem);
+      });
+      inputRef.focus();
+
+      });
 
     </script>
   </body>
