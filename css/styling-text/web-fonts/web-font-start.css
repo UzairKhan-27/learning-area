@@ -1,9 +1,21 @@
-/* General setup */
+/* @font-face{
+  font-family: "abel-regular";
+  src:
+    url(./bevan-webfont.woff2)format("woff2"),
+    url(./bevan-webfont.woff)format("woff");
+    font-weight: normal;
+    font-style: normal;
+} */
 
+html{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 html {
-  font-size: 10px;
+  font-size: 20px;
   margin: 0;
-  font-family: sans-serif;
+  /* /* font-family: "abel-regular",sans-serif; */
 }
 
 body {
